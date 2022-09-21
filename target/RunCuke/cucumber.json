@@ -1,0 +1,692 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16627307500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "User should able to create new Account",
+        "description": "",
+        "id": "create-an-account-functionality;user-should-able-to-create-new-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 305610500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1289030400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on Home Page",
+            "match": {
+              "location": "CreateAccountSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4152049200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I can click on SignIn Page",
+            "match": {
+              "location": "CreateAccountSteps.iCanClickOnSignInPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 620503300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I can enter new \"qa1234@gmail.com\" id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "qa1234@gmail.com",
+                  "offset": 17
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterNewId(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156114100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I can click on Create an account button",
+            "match": {
+              "location": "CreateAccountSteps.iCanClickOnCreateAnAccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3711181900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I can enter FirstName \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test",
+                  "offset": 23
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterFirstName(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251418400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I can enter LastName\"QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "QA",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterLastName(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 338530200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I can enter Password\"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123456",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterPassword(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 289748700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I can enter Address\"1234 Kings Drive\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234 Kings Drive",
+                  "offset": 20
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterAddress(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 237524100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I can enter City\"Harrow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harrow",
+                  "offset": 17
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterCity(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20288032200,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate option with text: indiana\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027DESKTOP-FUGQNF4\u0027, ip: \u0027192.168.20.71\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)\r\n\tat com.automationpractice.utility.Utility.selectByVisibleTextFromDropDown(Utility.java:148)\r\n\tat com.automationpractice.pages.CreateAnAccountPage.SelectState(CreateAnAccountPage.java:88)\r\n\tat com.automationpractice.steps.CreateAccountSteps.iCanSelectState(CreateAccountSteps.java:64)\r\n\tat ✽.And I can select State\"indiana\"(src/test/java/resources/featurefile/createanaccount.feature:13)\r\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I can select State\"indiana\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "indiana",
+                  "offset": 19
+                }
+              ],
+              "location": "CreateAccountSteps.iCanSelectState(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I can enter Post Code\"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345",
+                  "offset": 22
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterPostCode(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I can select Country\"United States\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "United States",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAccountSteps.iCanSelectCountry(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I can enter Mobile Phone\"1234567890\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234567890",
+                  "offset": 25
+                }
+              ],
+              "location": "CreateAccountSteps.iCanEnterMobilePhone(String)"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I click on Register button",
+            "match": {
+              "location": "CreateAccountSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I can see the Account Name on Top Reigt",
+            "match": {
+              "location": "CreateAccountSteps.iCanSeeTheAccountNameOnTopReigt()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create An Account Functionality",
+    "description": "",
+    "id": "create-an-account-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featurefile/createanaccount.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18701849900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should able to brows a store",
+        "description": "",
+        "id": "our-stores-browsing-functionality;user-should-able-to-brows-a-store",
+        "after": [
+          {
+            "result": {
+              "duration": 56700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 46500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on Home Page",
+            "match": {
+              "location": "CreateAccountSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I click on \u0027Our Stores\u0027 page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I can",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Our Stores Browsing Functionality",
+    "description": "",
+    "id": "our-stores-browsing-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featurefile/ourestores.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19416660500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User able to remove item in shopping cart",
+        "description": "",
+        "id": "shopping-cart-functionality;user-able-to-remove-item-in-shopping-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 1061525700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on Home Page",
+            "match": {
+              "location": "CreateAccountSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 456782800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I mousehover on WOMEN tab",
+            "match": {
+              "location": "SummerDressSteps.iMousehoverOnWOMENTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3136351300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Summer Dresses",
+            "match": {
+              "location": "SummerDressSteps.iClickOnSummerDresses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20207200500,
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d105.0.5195.127)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027DESKTOP-FUGQNF4\u0027, ip: \u0027192.168.20.71\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7d161a93c4d5451bd2fe16165afc097d, clickElement {id\u003d7d31c6cd-25f1-40af-a307-a2007cadef5b}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\ADMINI~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60525}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60525/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (7d161a93c4d5451bd2fe16165afc097d)] -\u003e xpath: //body/div[@id\u003d\u0027page\u0027]/div[2]/div[1]/div[3]/div[2]/ul[1]/li[1]/div[1]/div[2]/div[2]/a[1]]\nSession ID: 7d161a93c4d5451bd2fe16165afc097d\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat com.automationpractice.utility.Utility.clickOnElement(Utility.java:53)\r\n\tat com.automationpractice.pages.SummerDressesPage.clickOnAddToCartButton(SummerDressesPage.java:37)\r\n\tat com.automationpractice.steps.ShopingCartSteps.iClickOnAddToCartButtonOnProduct(ShopingCartSteps.java:11)\r\n\tat ✽.And I click on Add to cart button on Product(src/test/java/resources/featurefile/shopingcart.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I click on Add to cart button on Product",
+            "match": {
+              "location": "ShopingCartSteps.iClickOnAddToCartButtonOnProduct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click on proceed to checkout button",
+            "match": {
+              "location": "ShopingCartSteps.iClickOnProceedToCheckoutButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I click on delete icon",
+            "match": {
+              "location": "ShopingCartSteps.iClickOnDeleteIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I can verify text \u0027Your shopping cart is empty.\u0027",
+            "match": {
+              "location": "ShopingCartSteps.iCanVerifyTextYourShoppingCartIsEmpty()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Shopping Cart Functionality",
+    "description": "",
+    "id": "shopping-cart-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featurefile/shopingcart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 40680113100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Summer items Display inside search result",
+        "description": "",
+        "id": "summer-dresses-functionality;summer-items-display-inside-search-result",
+        "after": [
+          {
+            "result": {
+              "duration": 31700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 43000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on Home Page",
+            "match": {
+              "location": "CreateAccountSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5956777400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I mousehover on WOMEN tab",
+            "match": {
+              "location": "SummerDressSteps.iMousehoverOnWOMENTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8099321100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Summer Dresses",
+            "match": {
+              "location": "SummerDressSteps.iClickOnSummerDresses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83322400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I can see \u0027SUMMER DRESSES \u0027 text",
+            "match": {
+              "location": "SummerDressSteps.iCanSeeSUMMERDRESSESText()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Summer Dresses Functionality",
+    "description": "",
+    "id": "summer-dresses-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featurefile/summerdersses.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 41904643500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User should be able to Change Price Range",
+        "description": "",
+        "id": "change-the-price-range;user-should-be-able-to-change-price-range",
+        "after": [
+          {
+            "result": {
+              "duration": 117200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 64000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on Home Page",
+            "match": {
+              "location": "CreateAccountSteps.iAmOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 282992000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I mousehover on WOMEN tab",
+            "match": {
+              "location": "SummerDressSteps.iMousehoverOnWOMENTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5928602200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Summer Dresses",
+            "match": {
+              "location": "SummerDressSteps.iClickOnSummerDresses()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I can change the price slider $16-$20",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I can see item returned with price range",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Change The Price Range",
+    "description": "",
+    "id": "change-the-price-range",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/featurefile/summerdresspricerange.feature"
+  }
+]
